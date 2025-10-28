@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpecMAS: Specification-Driven Multi-Agent Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="SpecMAS: official project page showcasing the paper, authors, datasets, and resources for the NeurIPS submission." />
+</head>
+<body id="top">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top">SpecMAS</a>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#overview">Overview</a>
+                <a href="#video">Presentation</a>
+                <a href="#resources">Resources</a>
+                <a href="#datasets">Datasets</a>
+                <a href="#authors">Authors</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="paper">
+            <div class="container hero-inner">
+                <div>
+                    <h1 class="hero-title">Specification-Driven Multi-Agent Synthesis for Reliable Collaboration</h1>
+                    <p class="hero-tagline">
+                        SpecMAS turns temporal-logic specifications into trustworthy, adaptive coordination policies for
+                        teams of autonomous agents. The framework couples verifiable controllers with data-driven skill
+                        refinement to stay reliable in dynamic environments.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="https://arxiv.org/abs/2406.01234" target="_blank" rel="noopener">Read the paper</a>
+                        <a class="button" href="https://github.com/specmas/specmas" target="_blank" rel="noopener">GitHub repository</a>
+                        <a class="button" href="#video">Watch the talk</a>
+                    </div>
+                </div>
+                <aside class="hero-meta" aria-labelledby="project-summary">
+                    <h3 id="project-summary">Project summary</h3>
+                    <dl>
+                        <dt>Conference</dt>
+                        <dd>NeurIPS 2024 submission</dd>
+                        <dt>Paper</dt>
+                        <dd><a href="https://arxiv.org/abs/2406.01234" target="_blank" rel="noopener">arXiv:2406.01234</a></dd>
+                        <dt>Code</dt>
+                        <dd><a href="https://github.com/specmas/specmas" target="_blank" rel="noopener">specmas/specmas</a></dd>
+                        <dt>Contact</dt>
+                        <dd><a href="mailto:specmas@researchlab.ai">specmas@researchlab.ai</a></dd>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Overview</h2>
+                    <p>
+                        SpecMAS unifies formal synthesis with lightweight learning updates so multi-agent teams can plan,
+                        execute, and recover from disruptions while satisfying mission requirements.
+                    </p>
+                </div>
+                <div class="columns">
+                    <div>
+                        <p>
+                            The system begins with probabilistic signal temporal logic that captures high-level safety and
+                            collaboration rules. These specifications are compiled into policies that remain verifiable even
+                            as the environment changes. Runtime monitors supervise execution and trigger replanning or
+                            recovery strategies when agents drift from the mission envelope.
+                        </p>
+                        <ul class="feature-list">
+                            <li>
+                                <strong>Specification-guided planning.</strong>
+                                Mission objectives become temporal-logic controllers that encode fairness, safety, and
+                                communication guarantees.
+                            </li>
+                            <li>
+                                <strong>Adaptive skill library.</strong>
+                                Agents refine reusable skills with contrastive imitation learning for quick transfer between
+                                simulators and real robots.
+                            </li>
+                            <li>
+                                <strong>Verified coordination.</strong>
+                                Runtime monitors enforce guarantees and initiate recovery behaviors during unexpected events.
+                            </li>
+                        </ul>
+                        <div class="hero-actions">
+                            <a class="button primary" href="https://docs.google.com/presentation/d/1QO7wUSpvSppEXAMPLE" target="_blank" rel="noopener">View slides</a>
+                            <a class="button" href="https://huggingface.co/specmas" target="_blank" rel="noopener">Model checkpoints</a>
+                        </div>
+                    </div>
+                    <aside class="aside-card" aria-labelledby="project-highlights">
+                        <h3 id="project-highlights">SpecMAS at a glance</h3>
+                        <ul>
+                            <li>Cross-domain benchmark covering warehouses, aerial fleets, and disaster response.</li>
+                            <li>Dockerized experiments and evaluation scripts for reproducibility.</li>
+                            <li>Community channels for updates, replication studies, and collaborations.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="video">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Presentation</h2>
+                    <p>Watch the ten-minute talk summarizing our approach, experiments, and main takeaways.</p>
+                </div>
+                <div class="video-frame">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="SpecMAS Presentation" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="resources">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Resources</h2>
+                    <p>Explore supplementary material that accompanies the paper.</p>
+                </div>
+                <div class="card-grid three">
+                    <a class="card" href="https://docs.google.com/presentation/d/1QO7wUSpvSppEXAMPLE" target="_blank" rel="noopener">
+                        <h3>Presentation slides</h3>
+                        <p>Detailed walkthrough of the method, ablations, and qualitative insights.</p>
+                    </a>
+                    <a class="card" href="https://github.com/specmas/specmas/releases" target="_blank" rel="noopener">
+                        <h3>Code release</h3>
+                        <p>Reproducible training and evaluation pipelines with Docker support.</p>
+                    </a>
+                    <a class="card" href="https://huggingface.co/specmas" target="_blank" rel="noopener">
+                        <h3>Models &amp; checkpoints</h3>
+                        <p>Downloadable policies and runtime monitors ready for benchmarking.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="datasets">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Datasets</h2>
+                    <p>SpecMAS ships with curated environments and evaluation scripts for diverse coordination tasks.</p>
+                </div>
+                <div class="card-grid two">
+                    <article class="card dataset-card">
+                        <h3>SpecMAS-Warehouse</h3>
+                        <p>High-fidelity warehouse simulator with human-robot teaming scenarios and automated labeling.</p>
+                        <a href="https://huggingface.co/datasets/specmas/specmas-warehouse" target="_blank" rel="noopener">Dataset page</a>
+                    </article>
+                    <article class="card dataset-card">
+                        <h3>SpecMAS-Aerial</h3>
+                        <p>Fleet coordination missions with weather perturbations and corridor constraints.</p>
+                        <a href="https://huggingface.co/datasets/specmas/specmas-aerial" target="_blank" rel="noopener">Dataset page</a>
+                    </article>
+                    <article class="card dataset-card">
+                        <h3>SpecMAS-Response</h3>
+                        <p>Search-and-rescue drills combining sensor fusion, communication delays, and adversarial events.</p>
+                        <a href="https://huggingface.co/datasets/specmas/specmas-response" target="_blank" rel="noopener">Dataset page</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="authors">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Authors</h2>
+                    <p>SpecMAS is a collaboration between formal methods, multi-agent learning, and robotics researchers.</p>
+                </div>
+                <div class="author-list">
+                    <article class="author-card">
+                        <h3>Alexandra Chen</h3>
+                        <p>Carnegie Mellon University</p>
+                        <a href="https://alexchen.ai" target="_blank" rel="noopener">Personal website</a>
+                    </article>
+                    <article class="author-card">
+                        <h3>Ravi Malhotra</h3>
+                        <p>University of Toronto</p>
+                        <a href="https://ravimalhotra.me" target="_blank" rel="noopener">Personal website</a>
+                    </article>
+                    <article class="author-card">
+                        <h3>Lucia Santoro</h3>
+                        <p>ETH Zürich</p>
+                        <a href="https://luciasantoro.net" target="_blank" rel="noopener">Personal website</a>
+                    </article>
+                    <article class="author-card">
+                        <h3>Hiroshi Kobayashi</h3>
+                        <p>The University of Tokyo</p>
+                        <a href="https://hiroshi-lab.jp" target="_blank" rel="noopener">Personal website</a>
+                    </article>
+                    <article class="author-card">
+                        <h3>Maya Singh</h3>
+                        <p>Stanford University</p>
+                        <a href="https://mayasingh.com" target="_blank" rel="noopener">Personal website</a>
+                    </article>
+                    <article class="author-card">
+                        <h3>Omar Pérez</h3>
+                        <p>University of California, Berkeley</p>
+                        <a href="https://omarperez.dev" target="_blank" rel="noopener">Personal website</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Stay in touch</h2>
+                    <p>Follow our progress, share feedback, and get involved with the SpecMAS project.</p>
+                </div>
+                <div class="community-links">
+                    <a href="https://discord.gg/specmas" target="_blank" rel="noopener">💬 Community Discord</a>
+                    <a href="mailto:specmas@researchlab.ai">✉️ Email the authors</a>
+                    <a href="https://twitter.com/specmas_lab" target="_blank" rel="noopener">🐦 @specmas_lab</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2024 SpecMAS Authors. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/specmas/specmas" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://arxiv.org/abs/2406.01234" target="_blank" rel="noopener">Paper</a>
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
